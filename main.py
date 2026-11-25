@@ -6,10 +6,11 @@ every run, no network, no randomness.
 """
 
 ENTRY = (
-    # The note: the fridge treats nine-day-old leftovers like a
-    # birthday — it held a little ceremony, then binned them.
-    "Your leftovers turned nine days old today, so I sang to them, "
-    "blew out the candle, and threw them away. You missed the party."
+    # The note: the fridge moved the midnight snacks to the top
+    # shelf — reaching them is a confession, and the light saw all.
+    "I put your midnight snacks on the top shelf. If you can reach "
+    "them, you can admit you ate them. The light stays on. I saw "
+    "everything."
 )
 
 
