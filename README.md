@@ -6,9 +6,9 @@
 
 Entry for the make.fun bounty "Notes From a Passive-Aggressive Fridge" — one funny passive-aggressive note a smart fridge leaves for its owner.
 
-> "Your leftovers turned nine days old today, so I sang to them, blew out the candle, and threw them away. You missed the party."
+> "I put your midnight snacks on the top shelf. If you can reach them, you can admit you ate them. The light stays on. I saw everything."
 
-Character count: 125.
+Character count: 133.
 
 ## Run
 
