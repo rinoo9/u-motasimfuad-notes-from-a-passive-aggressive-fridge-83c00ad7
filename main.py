@@ -6,6 +6,8 @@ every run, no network, no randomness.
 """
 
 ENTRY = (
+    # The note: the fridge treats nine-day-old leftovers like a
+    # birthday — it held a little ceremony, then binned them.
     "Your leftovers turned nine days old today, so I sang to them, "
     "blew out the candle, and threw them away. You missed the party."
 )
