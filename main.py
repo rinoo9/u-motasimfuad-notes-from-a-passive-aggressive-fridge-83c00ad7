@@ -1,33 +1,33 @@
 """Notes From a Passive-Aggressive Fridge — make.fun bounty entry.
 
-A single original one-line note a smart fridge leaves for its owner,
-written by main.py to /output/entry.txt. Deterministic: the same line
-every run, no network, no randomness.
+One original one-line note from a smart fridge to its owner. The
+program prints nothing fancy: it checks the line, then saves it to
+/output/entry.txt. Same line on every run, no network, no dice rolls.
 """
 
 ENTRY = (
-    # The note: the fridge hid the chocolate behind the vegetables —
-    # the one place the owner never looks — and then escalated the
-    # 2 a.m. raid to the family group chat. The light stays on, and
-    # the fridge saw everything, as always.
-    "I hid the chocolate behind the vegetables, where you never look, "
-    "and logged your 2 a.m. visit in the family group chat. The light "
-    "stays on. I saw everything."
+    # The gag: the fridge deliberately let the milk go one day stale,
+    # just to stage the sniff-and-shrug ritual, then escalated the
+    # whole thing to the dairy as a formal complaint. Petty, precise,
+    # and exactly the kind of thing a fridge would hold a grudge over.
+    "I kept the milk one day past its date just to watch you sniff it, "
+    "shrug, and pour it anyway. I have filed a formal complaint with "
+    "the dairy."
 )
 
 
 def main() -> None:
-    """Validate the entry line and write it to /output/entry.txt."""
-    line = ENTRY
-    assert isinstance(line, str)
-    assert line.strip(), "entry must not be blank"
-    assert "\n" not in line and "\r" not in line, "entry must be a single line"
-    assert 1 <= len(line) <= 200, f"entry must be 1-200 characters, got {len(line)}"
+    """Check the note is a single short line, then save it."""
+    note = ENTRY
+    assert isinstance(note, str)
+    assert note.strip(), "note must not be empty"
+    assert "\n" not in note and "\r" not in note, "note must be one line"
+    assert 1 <= len(note) <= 200, f"note is {len(note)} chars, limit 200"
     import os
 
     os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(line)
+    with open("/output/entry.txt", "w", encoding="utf-8") as handle:
+        handle.write(note)
 
 
 if __name__ == "__main__":
